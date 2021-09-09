@@ -1,6 +1,4 @@
 ARG CRANE_GO_VERSION=1.16
-ARG YQ_PYTHON_VERSION=3.9.6
-ARG K8S_VERSION=1.21
 
 FROM registry.hub.docker.com/bitnami/git AS git
 WORKDIR /src
