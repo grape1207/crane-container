@@ -26,4 +26,5 @@ COPY --from=crane-build /usr/local/bin/crane /usr/local/bin/
 COPY --from=oc-build /usr/local/bin/oc /usr/local/bin/kubectl /usr/local/bin/
 WORKDIR /app
 COPY entrypoint.sh .
+RUN chmod 777 /app/entrypoint.sh
 ENTRYPOINT [ "/app/entrypoint.sh" ]
